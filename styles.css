@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;                /* Smooth scrolling */
+    overflow:auto;                          /* Set overflow to auto */
+    scrollbar-width: none;                  /* Hide scrollbar for Firefox */
+    margin-bottom: 50px;                    /* Add some space at the bottom of the page */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+
+#navbarNav{
+    margin: top 100rem;
+}
+nav{
+    border-radius: 0px 0px 25px 25px;       /* Add border radius to the navigation bar */
+    font-weight: 400;                       /* Set font weight */
+}
+
+nav a:hover{
+    transform: scale(1.05);                 /* Scale images on hover */
+    background-color: rgba(0, 0, 0, 0.250);/* Set background color */
+    border-radius: 10px 10px 10px 10px;     /* Add border radius to the navigation bar */
+}
+
+header{
+    position: relative;                     /* Fix the header to the top of the page */
+    width: 100%;                            /* Set the width to 100% */
+    background-clip: border-box;            /* Clip background to border box */
+    background-color: #6273ee;            /* Set background color */
+    color: #ffffff;                       /* Set text color */
+    text-align: center;                     /* Align text to center */
+    padding: 10px;                          /* Add padding to the header */
+}
+
+
+img:hover {
+    transform: scale(1.01);                 /* Scale images on hover */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */  
+}
+
+
+button{
+    cursor: pointer;                        /* Change cursor to pointer on hover */
+    padding: 10px 20px;                     /* Add padding to buttons */
+    border: none;                           /* Remove border */
+    border-radius: 5px;                     /* Add border radius */
+    font-family: Arial, sans-serif;         /* Set font family */
+    font-size: 50px;                        /* Set font size */
+}
+button:hover {
+    transform: scale(1.02);                 /* Scale images on hover */
+    transition: transform 0.1s ease-in-out; /* Smooth transition */  
+}
+
+body{
+    background-image: -webkit-image-set(url(/images/paw-prints.png));   /* Set background image */
+}
+
+body::-webkit-scrollbar {
+    display: none;                /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+#banner {
+    height: 100px;                /* Set the height of the banner */
+    background-color: #6273ee;  /* Set background color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    background-image: -webkit-linear-gradient(bottom right, rgb(216, 235, 185), rgb(176, 176, 252)); /* Set background color */
+    color: #000000;             /* Set text color */
+    text-align: center;           /* Align text to center */
+    position: fixed;              /* Fix the footer to the bottom of the page */
+    width: 100%;                  /* Set the width to 100% */
+    height:60px;                  /* Set the height of the footer */
+    bottom: 0px;                  /* Position the footer at the bottom of the page */;
+}
+.flip-card {
+    background-color: transparent;          /* Set background color to transparent */
+    width: 300px;                           /* Set width of the flip card */
+    height: 300px;                          /* Set height of the flip card */
+    perspective: 1000px;                    /* Define perspective for 3D effect */
+}
+  
+.flip-card-inner {
+    position: relative;                     /* Set position to relative */
+    width: 100%;                            /* Set width to 100% */
+    height: 100%;                           /* Set height to 100% */
+    text-align: center;                     /* Align text to center */
+    transition: transform 0.6s;             /* Smooth transition for transform */
+    transform-style: preserve-3d;           /* Preserve 3D transform style */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);/* Add box shadow */
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);             /* Rotate card on hover */
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;                     /* Set position to absolute */
+    width: 100%;                            /* Set width to 100% */
+    height: 100%;                           /* Set height to 100% */
+    -webkit-backface-visibility: hidden;    /* Hide backface visibility for WebKit */
+    backface-visibility: hidden;            /* Hide backface visibility */
+}
+  
+.flip-card-front {
+    background-color: #bbb;                 /* Set background color */
+    color: black;                           /* Set text color */
+}
+  
+.flip-card-back {
+    background-image: -webkit-linear-gradient(bottom right, rgb(216, 235, 185), rgb(176, 176, 252)); /* Set background color */           
+    color: white;                           /* Set text color */
+    transform: rotateY(180deg);             /* Rotate back face */
+}
+
